@@ -135,9 +135,9 @@ System.out.println(r);
 ExpressRunner runner = new ExpressRunner();
 DefaultContext<String, Object> context = new DefaultContext<String, Object>();
 runner.addFunction("join",new JoinOperator());
-Object r = runner.execute("join(1,2,3)", context, null, false, false);
+Object r = runner.execute("join(1,2)", context, null, false, false);
 System.out.println(r);
-//返回结果  [1, 2, 3]
+//返回结果  [1, 2]
 
 ```
 ## 4、绑定java类或者对象的method
